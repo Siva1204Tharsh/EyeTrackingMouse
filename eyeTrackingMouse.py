@@ -1,7 +1,7 @@
 import cv2
 import mediapipe as mp  # Face detection library
 import pyautogui    # Mouse, keyboard, and clipboard control library this brings in the pywin32 library
-webCam=cv2.VideoCapture(0)
+webCam=cv2.VideoCapture(0) # open the camera  the 0 is the camera index  for example 0 is the first camera
 face_mesh = mp.solutions.face_mesh.FaceMesh(refine_landmarks=True)
 screen_w , screen_h = pyautogui.size() # get the screen size
 
@@ -39,4 +39,4 @@ while True:
         break
 
 webCam.release()
-cv2.destroyAllWindows() # close all the windows opened by opencv  
+cv2.destroyAllWindows() # close all the windows opened by opencv  q
