@@ -39,4 +39,4 @@ while True:
         break
 
 webCam.release()
-cv2.destroyAllWindows()
+cv2.destroyAllWindows() # close all the windows opened by opencv  
